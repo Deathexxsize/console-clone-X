@@ -13,7 +13,10 @@
         <property name="hibernate.show_sql">true</property>
 
         <!-- Сущности -->
-       <!-- <mapping class="org.example.entity.Character"/> -->
+       <mapping class="org.example.entity.Friendship"/>
+        <mapping class="org.example.entity.Post"/>
+        <mapping class="org.example.entity.User"/>
+
 
     </session-factory>
 </hibernate-configuration>
