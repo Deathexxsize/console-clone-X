@@ -13,4 +13,13 @@ public class UserService {
     public void createUser(User user) {
         userDao.save(user);
     }
+
+    public boolean userExists(String username, String password) {
+        if (userDao.existsByUsername(username)) {
+            if (userDao.existsByPassword(password)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
